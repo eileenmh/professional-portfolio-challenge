@@ -1,13 +1,22 @@
 html {
     font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: darkblue;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, serif;
 }
 
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #364156;
-    color: white;
+    background-color: coral;
+    padding: 10px;
 }
 
     h1 {
@@ -17,20 +26,52 @@ header {
 
     nav {
         float: right;
+        margin-right: 1.25rem;
+        padding-right: 3rem;
     }
-    
-        nav {list-style-type: none;}
+        .nav-list {
+            display: flex;
+            gap: 1rem;
+
+            list-style: none;
+        }
+        
+        .nav-list li {
+            flex-grow: 1;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+        }
+
+        /* 
 
             nav li {
                 display: inline-block;
                 
             }
 
-                a {
-                    text-decoration: none;
-                    color:white;
-                }
+ */
 
 main {
-    margin-top: auto;
+    margin: 100px 20px;
+}
+
+section {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1em;
+}
+
+h2 {
+    padding: 50px;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    float: right;
+    border-right: black 10px solid;
+}
+
+section div {
+    background-color: #333;
+    color: white;
 }
