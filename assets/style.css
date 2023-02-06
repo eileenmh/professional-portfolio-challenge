@@ -16,6 +16,7 @@ header {
     width: 100%;
     background-color: #3F4739;
     padding: 10px;
+    z-index: 10;
 }
 
     h1 {
@@ -44,9 +45,9 @@ header {
             color: #E1EFE6;
         }
 
-img {
+#about-me img {
     float: left;
-    max-width: 200px;
+    max-width: 400px;
     margin: 20px;
 
 }
@@ -78,22 +79,32 @@ h2 {
 .right-side-content {
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
+    justify-content: space-between;
     width: 50%;
 }
 
 .individual-project {
+    position: relative;
     max-width: 30%;
     min-width: 25%;
-    padding: 10px;
+    /* padding: 10px;
     height: 400px;
     gap: 2em;
-    margin: 10px;
+    margin: 10px; */
 }
 
-.individual-project:nth-of-type(1) {
-    min-width: 100%;
+.individual-project img {
+    max-width: 100%;
 }
+
+h3 {
+    position: absolute;
+    background-color: #E1EFE6;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+
 
 /*Styling for smaller screens*/
 @media screen and (max-width: 685px) {
@@ -107,9 +118,8 @@ h2 {
         flex-grow: unset;
     }
 
-    section {
+    section, .right-side-content {
         display: inline;
-
     }
     
     h2 {
@@ -121,7 +131,7 @@ h2 {
 
     }
 
-    img {
+    #about-me img {
         max-width: 75%;
     }
 
@@ -130,6 +140,10 @@ h2 {
         width: 100%;
     }
 
+    .individual-project {
+        min-width: 75%;
+        margin: 2rem;
+    }
 }
 
 
@@ -140,7 +154,9 @@ h2 {
     text-align: right;
     }
 
-
+    .individual-project:nth-of-type(1) {
+        min-width: 100%;
+    }
 
 
 }
