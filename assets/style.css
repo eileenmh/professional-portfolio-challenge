@@ -19,10 +19,12 @@ header {
     h1 {
         display: inline-block;
         font-size: 2rem;
+        float: left;
     }
 
     nav {
         float: right;
+        display: inline-block;
         margin-right: 1.25rem;
         padding-right: 3rem;
     }
@@ -41,16 +43,8 @@ header {
             text-decoration: none;
         }
 
-        /* 
-
-            nav li {
-                display: inline-block;
-                
-            }
-
- */
-
 img {
+    display: inline-block;
     max-height: 300px;
 }
 
@@ -84,11 +78,16 @@ section div {
 }
 
 .individual-project {
+    max-width: 30%;
     min-width: 25%;
     padding: 10px;
+    height: 400px;
+    gap: 2em;
+    margin: 10px;
     background-image: url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2369&q=80");
+    background-size: cover;
 }
 
 .individual-project:nth-of-type(1) {
-    width: 100%;
+    min-width: 100%;
 }
