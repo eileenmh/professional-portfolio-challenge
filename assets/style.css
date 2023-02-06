@@ -76,6 +76,8 @@ h2 {
 section div {
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
     background-color: #333;
     color: white;
     width: 50%;
@@ -84,4 +86,9 @@ section div {
 .individual-project {
     min-width: 25%;
     padding: 10px;
+    background-image: url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2369&q=80");
+}
+
+.individual-project:nth-of-type(1) {
+    width: 100%;
 }
