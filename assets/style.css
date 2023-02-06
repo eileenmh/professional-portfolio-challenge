@@ -1,14 +1,11 @@
 html {
     font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 body {
     color: darkblue;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, serif;
+    font-family: 'Fredoka', 'Roboto', sans-serif;
 }
 
 header {
