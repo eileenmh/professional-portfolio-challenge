@@ -4,27 +4,27 @@ html {
 }
 
 body {
-    color: darkblue;
+    background-color: #E1EFE6;
+    color: #3F4739;
     font-family: 'Fredoka', 'Roboto', sans-serif;
 }
 
 header {
     position: fixed;
+    color: #E1EFE6;
     top: 0;
     width: 100%;
-    background-color: coral;
+    background-color: #3F4739;
     padding: 10px;
 }
 
     h1 {
-        display: inline-block;
         font-size: 2rem;
         float: left;
     }
 
     nav {
         float: right;
-        display: inline-block;
         margin-right: 1.25rem;
         padding-right: 3rem;
     }
@@ -41,6 +41,7 @@ header {
 
         .nav-list a {
             text-decoration: none;
+            color: #E1EFE6;
         }
 
 img {
@@ -59,12 +60,11 @@ section {
 }
 
 h2 {
-    padding: 50px;
+    padding: 20px;
     margin-right: 40px;
     margin-bottom: 10px;
     width: 25%;
     float: right;
-    border-right: black 10px solid;
 }
 
 section div {
@@ -72,8 +72,6 @@ section div {
     flex-wrap: wrap;
     flex-grow: 1;
     justify-content: center;
-    background-color: #333;
-    color: white;
     width: 50%;
 }
 
@@ -90,4 +88,27 @@ section div {
 
 .individual-project:nth-of-type(1) {
     min-width: 100%;
+}
+
+@media screen and (max-width: 685px) {
+    section {
+        display: inline;
+
+    }
+    
+    h2 {
+        float: none;
+        width: auto;
+        border-bottom: #3F4739 10px solid;
+        margin: 0px;
+        text-align: center;
+
+    }
+}
+
+@media screen and (min-width: 686px) {
+    h2 {
+    border-right: #3F4739 10px solid;
+    text-align: right;
+    }
 }
