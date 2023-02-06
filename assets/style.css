@@ -45,8 +45,16 @@ header {
         }
 
 img {
+    float: left;
+    max-width: 200px;
+    margin: 20px;
+
+}
+
+p {
     display: inline-block;
-    max-height: 300px;
+    text-align: justify;
+    width: 75%;
 }
 
 main {
@@ -67,11 +75,10 @@ h2 {
     float: right;
 }
 
-section div {
+.right-side-content {
     display: flex;
     flex-wrap: wrap;
     flex-grow: 1;
-    justify-content: center;
     width: 50%;
 }
 
@@ -90,6 +97,7 @@ section div {
     min-width: 100%;
 }
 
+/*Styling for smaller screens*/
 @media screen and (max-width: 685px) {
     section {
         display: inline;
@@ -104,11 +112,25 @@ section div {
         text-align: center;
 
     }
+
+    img {
+        max-width: 75%;
+    }
+
+    .right-side-content {
+        justify-content: center;
+        width: 100%;
+    }
+
 }
 
+
+/*Styling for larger screens*/
 @media screen and (min-width: 686px) {
     h2 {
     border-right: #3F4739 10px solid;
     text-align: right;
     }
+
+
 }
