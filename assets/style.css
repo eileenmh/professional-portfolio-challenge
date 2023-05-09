@@ -95,6 +95,12 @@ h2 {
 
 .individual-project img {
     max-width: 100%;
+    min-width: 200px;
+}
+
+.right-side-content a {
+    color: #3F4739;
+    text-decoration: none;
 }
 
 h3 {
